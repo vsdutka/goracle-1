@@ -151,6 +151,7 @@ func numberVarformatForString(text string) string {
 		if !rational && text[i] == '.' {
 			format[i] = '.'
 			rational = true
+			continue
 		}
 		format[i] = '9'
 	}
